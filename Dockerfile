@@ -42,4 +42,6 @@ ENV PATH=$PATH:/usr/local/cuda-6.5/bin
 
 RUN pip install Theano
 
-
+WORKDIR /home
+RUN git clone https://github.com/mbartoli/deep-simplification
+WORKDIR /home/deep-simplification
