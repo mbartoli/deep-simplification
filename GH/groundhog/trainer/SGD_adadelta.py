@@ -20,6 +20,7 @@ from theano.sandbox.scan import scan
 from theano.sandbox.rng_mrg import MRG_RandomStreams as RandomStreams
 
 from groundhog.utils import print_time, print_mem, const
+from groundhog.utils import replace_array
 
 logger = logging.getLogger(__name__)
 
@@ -47,6 +48,8 @@ class SGD(object):
             state['adarho'] = 0.96
         if 'adaeps' not in state:
             state['adaeps'] = 1e-6
+        if 'fixed_embeddings' not in state:
+            state['fixed_embeddings'] = False
 
         #####################################
         # Step 0. Constructs shared variables
@@ -55,6 +58,11 @@ class SGD(object):
         self.model = model
         self.rng = numpy.random.RandomState(state['seed'])
         srng = RandomStreams(self.rng.randint(213))
+        if state['fixed_embeddings']:
+            self.restricted_list = ['W_0_enc_approx_embdr', 'W_0_dec_approx_embdr', 'W2_dec_deep_softmax', 'b_dec_deep_softmax']
+        else:
+            self.restricted_list = []
+        self.filters = [0.0 if p.name in self.restricted_list else 1.0 for p in model.params]
         self.gs = [theano.shared(numpy.zeros(p.get_value(borrow=True).shape,
                                              dtype=theano.config.floatX),
                                 name=p.name)
@@ -77,7 +85,7 @@ class SGD(object):
                                                 dtype=x.dtype),
                                     name=x.name) for x in model.inputs]
 
-	if 'profile' not in self.state:
+        if 'profile' not in self.state:
             self.state['profile'] = 0
 
         ###################################
@@ -134,9 +142,9 @@ class SGD(object):
         logger.debug('took {}'.format(time.time() - st))
 
         self.lr = numpy.float32(1.)
-        new_params = [p - (TT.sqrt(dn2 + eps) / TT.sqrt(gn2 + eps)) * g
-                for p, g, gn2, dn2 in
-                zip(model.params, self.gs, self.gnorm2, self.dnorm2)]
+        new_params = [p - filter * (TT.sqrt(dn2 + eps) / TT.sqrt(gn2 + eps)) * g
+                for p, g, gn2, dn2, filter in
+                zip(model.params, self.gs, self.gnorm2, self.dnorm2, self.filters)]
 
         updates = zip(model.params, new_params)
         # d2
@@ -162,6 +170,10 @@ class SGD(object):
     def __call__(self):
         batch = self.data.next()
         assert batch
+        
+        if self.state['rolling_vocab']: # Assumes batch is a dictionary
+            batch['x'] = replace_array(batch['x'], self.model.large2small_src)
+            batch['y'] = replace_array(batch['y'], self.model.large2small_trgt)
 
         # Perturb the data (! and the model)
         if isinstance(batch, dict):
@@ -206,3 +218,26 @@ class SGD(object):
                        ('time_step', float(g_ed - g_st)),
                        ('whole_time', float(whole_time))]+zip(self.prop_names, rvals))
         return ret
+
+    def save(self, filename):
+        """
+        Save the trainer parameters to file `filename`
+        """
+        vals = dict([(self.gnorm2[i].name, self.gnorm2[i].get_value()) for i in xrange(len(self.model.params))])
+        vals.update([(self.dnorm2[i].name, self.dnorm2[i].get_value()) for i in xrange(len(self.model.params))])
+        if self.state['save_gs']:
+            vals.update([(self.gs[i].name, self.gs[i].get_value()) for i in xrange(len(self.model.params))])        
+        numpy.savez(filename, **vals)
+
+    def load(self, filename):
+        """
+        Load the trainer parameters.
+        """
+        vals = numpy.load(filename)
+        for i in xrange(len(self.model.params)):
+            p = self.model.params[i]
+            self.gnorm2[i].set_value(vals[p.name+'_g2'])
+            self.dnorm2[i].set_value(vals[p.name+'_d2'])
+            if self.state['save_gs']:
+                self.gs[i].set_value(vals[p.name])
+        #TODO Error check

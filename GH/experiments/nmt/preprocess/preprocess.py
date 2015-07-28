@@ -32,6 +32,8 @@ parser.add_argument("-b", "--binarized-text", default='binarized_text.pkl',
                     help="the name of the pickled binarized text file")
 parser.add_argument("-d", "--dictionary", default='vocab.pkl',
                     help="the name of the pickled binarized text file")
+parser.add_argument("-r", "--reuse-dict", action="store_true",
+                    help="Reuse the dictionary. May not work with --ngram")
 parser.add_argument("-n", "--ngram", type=int, metavar="N",
                     help="create n-grams")
 parser.add_argument("-v", "--vocab", type=int, metavar="N",
@@ -50,10 +52,6 @@ parser.add_argument("-e", "--each", action="store_true",
                     help="output files for each separate input file")
 parser.add_argument("-c", "--count", action="store_true",
                     help="save the word counts")
-parser.add_argument("-t", "--char", action="store_true",
-                    help="character-level processing")
-parser.add_argument("-l", "--lowercase", action="store_true",
-                    help="lowercase")
 
 
 def open_files():
@@ -109,8 +107,6 @@ def create_dictionary():
     # Part I: Counting the words
     counters = []
     sentence_counts = []
-    global_counter = Counter()
-
     for input_file, base_filename in zip(args.input, base_filenames):
         count_filename = base_filename + '.count.pkl'
         input_filename = os.path.basename(input_file.name)
@@ -125,15 +121,7 @@ def create_dictionary():
             counter = Counter()
             sentence_count = 0
             for line in input_file:
-                if args.lowercase:
-                    line = line.lower()
-                words = None
-                if args.char:
-                    words = list(line.strip().decode('utf-8'))
-                else:
-                    words = line.strip().split(' ')
-                counter.update(words)
-                global_counter.update(words)
+                counter.update(line.strip().split(' '))
                 sentence_count += 1
         counters.append(counter)
         sentence_counts.append(sentence_count)
@@ -144,7 +132,7 @@ def create_dictionary():
         input_file.seek(0)
 
     # Part II: Combining the counts
-    combined_counter = global_counter
+    combined_counter = reduce(add, counters)
     logger.info("Total: %d unique words in %d sentences with a total "
                 "of %d words."
                 % (len(combined_counter), sum(sentence_counts),
@@ -181,19 +169,14 @@ def binarize():
                              dtype='uint16')
     binarized_corpora = []
     total_ngram_count = 0
-    for input_file, base_filename, sentence_count in \
-            zip(args.input, base_filenames, sentence_counts):
+    for input_file, base_filename in \
+            zip(args.input, base_filenames):
         input_filename = os.path.basename(input_file.name)
         logger.info("Binarizing %s." % (input_filename))
         binarized_corpus = []
         ngram_count = 0
         for sentence_count, sentence in enumerate(input_file):
-            if args.lowercase:
-                sentence = sentence.lower()
-            if args.char:
-                words = list(sentence.strip().decode('utf-8'))
-            else:
-                words = sentence.strip().split(' ')
+            words = sentence.strip().split(' ')
             binarized_sentence = [vocab.get(word, 1) for word in words]
             binarized_corpus.append(binarized_sentence)
             if args.ngram:
@@ -261,6 +244,10 @@ if __name__ == "__main__":
     logger = logging.getLogger('preprocess')
     args = parser.parse_args()
     base_filenames = open_files()
-    combined_counter, sentence_counts, counters, vocab = create_dictionary()
+    if not args.reuse_dict:
+        combined_counter, sentence_counts, counters, vocab = create_dictionary()
+    else:
+        with open(args.dictionary, 'rb') as f:
+            vocab = cPickle.load(f)
     if args.ngram or args.pickle:
         binarize()

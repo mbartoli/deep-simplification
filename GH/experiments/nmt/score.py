@@ -13,13 +13,13 @@ from experiments.nmt import\
         RNNEncoderDecoder,\
         parse_input,\
         get_batch_iterator,\
-        prototype_state
+        prototype_phrase_state
 
 logger = logging.getLogger(__name__)
 
 class BatchTxtIterator(object):
 
-    def __init__(self, state, txt, indx,  batch_size, raise_unk, unk_sym=-1, null_sym=-1):
+    def __init__(self, state, txt, indx,  batch_size, raise_unk):
         self.__dict__.update(locals())
         self.__dict__.pop('self')
 
@@ -44,8 +44,7 @@ class BatchTxtIterator(object):
         try:
             while len(seqs) < self.batch_size:
                 line = next(self.txt_file).strip()
-                seq, _ = parse_input(self.state, self.indx, line, raise_unk=self.raise_unk,
-                                     unk_sym=self.unk_sym, null_sym=self.null_sym)
+                seq, _ = parse_input(self.state, self.indx, line, raise_unk=self.raise_unk)
                 seqs.append(seq)
             return self._pack(seqs)
         except StopIteration:
@@ -58,10 +57,8 @@ class BatchBiTxtIterator(object):
     def __init__(self, state, src, indx_src, trg, indx_trg, batch_size, raise_unk):
         self.__dict__.update(locals())
         self.__dict__.pop('self')
-        self.src_iter = BatchTxtIterator(state, src, indx_src, batch_size, raise_unk, 
-                                         unk_sym=state['unk_sym_source'], null_sym=state['null_sym_source'])
-        self.trg_iter = BatchTxtIterator(state, trg, indx_trg, batch_size, raise_unk, 
-                                         unk_sym=state['unk_sym_target'], null_sym=state['null_sym_target'])
+        self.src_iter = BatchTxtIterator(state, src, indx_src, batch_size, raise_unk)
+        self.trg_iter = BatchTxtIterator(state, trg, indx_trg, batch_size, raise_unk)
 
     def start(self):
         self.src_iter.start()
@@ -108,7 +105,7 @@ def parse_args():
 def main():
     args = parse_args()
 
-    state = prototype_state()
+    state = prototype_phrase_state()
     with open(args.state) as src:
         state.update(cPickle.load(src))
     state.update(eval("dict({})".format(args.changes)))
@@ -119,6 +116,17 @@ def main():
     state['force_enc_repr_cpu'] = False
 
     logging.basicConfig(level=getattr(logging, state['level']), format="%(asctime)s: %(name)s: %(levelname)s: %(message)s")
+
+    if 'rolling_vocab' not in state:
+        state['rolling_vocab'] = 0
+    if 'save_algo' not in state:
+        state['save_algo'] = 0
+    if 'save_gs' not in state:
+        state['save_gs'] = 0
+    if 'save_iter' not in state:
+        state['save_iter'] = -1
+    if 'var_src_len' not in state:
+        state['var_src_len'] = False
 
     rng = numpy.random.RandomState(state['seed'])
     enc_dec = RNNEncoderDecoder(state, rng, skip_init=True, compute_alignment=True)
@@ -143,7 +151,7 @@ def main():
                     state['bs'], raise_unk=not args.allow_unk)
             data_iter.start()
         else:
-            data_iter = get_batch_iterator(state)
+            data_iter = get_batch_iterator(state, rng)
             data_iter.start(0)
 
         score_file = open(args.scores, "w") if args.scores else sys.stdout
@@ -193,10 +201,8 @@ def main():
                 compute_probs = enc_dec.create_probs_computer()
                 src_line = raw_input('Source sequence: ')
                 trgt_line = raw_input('Target sequence: ')
-                src_seq = parse_input(state, indx_word_src, src_line, raise_unk=not args.allow_unk, 
-                                      unk_sym=state['unk_sym_source'], null_sym=state['null_sym_source'])
-                trgt_seq = parse_input(state, indx_word_trgt, trgt_line, raise_unk=not args.allow_unk,
-                                       unk_sym=state['unk_sym_target'], null_sym=state['null_sym_target'])
+                src_seq = parse_input(state, indx_word_src, src_line, raise_unk=not args.allow_unk)
+                trgt_seq = parse_input(state, indx_word_trgt, trgt_line, raise_unk=not args.allow_unk)
                 print "Binarized source: ", src_seq
                 print "Binarized target: ", trgt_seq
                 probs = compute_probs(src_seq, trgt_seq)
@@ -216,11 +222,9 @@ def main():
                 src_line = next(src_file).strip()
                 trgt_line = next(trg_file).strip()
                 src_seq, src_words = parse_input(state,
-                        indx_word_src, src_line, raise_unk=not args.allow_unk,
-                        unk_sym=state['unk_sym_source'], null_sym=state['null_sym_source'])
+                        indx_word_src, src_line, raise_unk=not args.allow_unk)
                 trgt_seq, trgt_words = parse_input(state,
-                        indx_word_trgt, trgt_line, raise_unk=not args.allow_unk,
-                        unk_sym=state['unk_sym_target'], null_sym=state['null_sym_target'])
+                        indx_word_trgt, trgt_line, raise_unk=not args.allow_unk)
                 probs, alignment = compute_probs(src_seq, trgt_seq)
                 if args.verbose:
                     print "Probs: ", probs.flatten()
