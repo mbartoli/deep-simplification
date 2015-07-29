@@ -22,7 +22,7 @@ RUN apt-get -y install \
 	liblapacke-dev \
 	liblapack-doc
 RUN apt-get install -f
-RUN pip install numpy scipy nose
+RUN pip install numpy scipy nose sklearn nltk
 
 ENV CUDA_RUN http://developer.download.nvidia.com/compute/cuda/6_5/rel/installers/cuda_6.5.14_linux_64.run
 
