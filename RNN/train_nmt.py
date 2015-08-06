@@ -33,7 +33,7 @@ if __name__ == '__main__':
         'optimizer': ['adam'],
         'decay-c': [0.], 
         'clip-c': [10.], 
-        'use-dropout': [False],
+        'use-dropout': [True],
         'learning-rate': [0.0001],
         'reload': [False]})
 
