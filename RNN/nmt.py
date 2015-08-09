@@ -985,7 +985,7 @@ def train(dim_word=100, # word vector dimensionality
 
             if numpy.isnan(cost) or numpy.isinf(cost):
                 print 'NaN detected'
-                return 1., 1., 1.
+                #return 1., 1., 1. mbartoli NaN fix
 
             if numpy.mod(uidx, dispFreq) == 0:
                 print 'Epoch ', eidx, 'Update ', uidx, 'Cost ', cost, 'UD ', ud
