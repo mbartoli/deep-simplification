@@ -834,16 +834,11 @@ def train(dim_word=100, # word vector dimensionality
           validFreq=1000,
           saveFreq=1000, # save the parameters after every saveFreq updates
           sampleFreq=100, # generate some samples after every sampleFreq updates
-          #datasets=['/data/lisatmp3/chokyun/europarl/europarl-v7.fr-en.en.tok', 
-          #          '/data/lisatmp3/chokyun/europarl/europarl-v7.fr-en.fr.tok'],
-          #valid_datasets=['../data/dev/newstest2011.en.tok', '../data/dev/newstest2011.fr.tok'],
-          #dictionaries=['/data/lisatmp3/chokyun/europarl/europarl-v7.fr-en.en.tok.pkl', 
-          #              '/data/lisatmp3/chokyun/europarl/europarl-v7.fr-en.fr.tok.pkl'],
-	  datasets=['../data/training/training-normal.tok', 
-                    '../data/training/training-simple.tok'],
+ 	  datasets=['../data/training/training-normal.tok', 
+                     '../data/training/training-simple.tok'],
           valid_datasets=['../data/validation/validation-normal.tok', '../data/validation/validation-simple.tok'],
           dictionaries=['../data/normal-dict.tok.pkl', 
-                        '../data/simple-dict.tok.pkl'],
+                         '../data/simple-dict.tok.pkl'],
           use_dropout=True,
           reload_=False):
 
@@ -985,7 +980,7 @@ def train(dim_word=100, # word vector dimensionality
 
             if numpy.isnan(cost) or numpy.isinf(cost):
                 print 'NaN detected'
-                #return 1., 1., 1. mbartoli NaN fix
+                return 1., 1., 1.
 
             if numpy.mod(uidx, dispFreq) == 0:
                 print 'Epoch ', eidx, 'Update ', uidx, 'Cost ', cost, 'UD ', ud

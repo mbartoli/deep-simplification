@@ -4,7 +4,7 @@ from nmt import train
 
 def main(job_id, params):
     print params
-    validerr = train(saveto=params['model'][0],
+    trainerr, validerr, testerr = train(saveto=params['model'][0],
                                         reload_=params['reload'][0],
                                         dim_word=params['dim_word'][0],
                                         dim=params['dim'][0],
@@ -33,7 +33,7 @@ if __name__ == '__main__':
         'optimizer': ['adam'],
         'decay-c': [0.], 
         'clip-c': [10.], 
-        'use-dropout': [False],
+        'use-dropout': [True],
         'learning-rate': [0.0001],
         'reload': [False]})
 

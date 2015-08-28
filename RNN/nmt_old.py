@@ -839,9 +839,9 @@ def train(dim_word=100, # word vector dimensionality
           #valid_datasets=['../data/dev/newstest2011.en.tok', '../data/dev/newstest2011.fr.tok'],
           #dictionaries=['/data/lisatmp3/chokyun/europarl/europarl-v7.fr-en.en.tok.pkl', 
           #              '/data/lisatmp3/chokyun/europarl/europarl-v7.fr-en.fr.tok.pkl'],
-	  datasets=['../data/training-normal.tok', 
-                    '../data/training-simple.tok'],
-          valid_datasets=['../data/validation-normal.tok', '../data/validation-simple.tok'],
+	  datasets=['../data/training/training-normal.tok', 
+                    '../data/training/training-simple.tok'],
+          valid_datasets=['../data/validation/validation-normal.tok', '../data/validation/validation-simple.tok'],
           dictionaries=['../data/normal-dict.tok.pkl', 
                         '../data/simple-dict.tok.pkl'],
           use_dropout=True,
@@ -985,7 +985,7 @@ def train(dim_word=100, # word vector dimensionality
 
             if numpy.isnan(cost) or numpy.isinf(cost):
                 print 'NaN detected'
-                return 1., 1., 1.
+                #return 1., 1., 1. mbartoli NaN fix
 
             if numpy.mod(uidx, dispFreq) == 0:
                 print 'Epoch ', eidx, 'Update ', uidx, 'Cost ', cost, 'UD ', ud
