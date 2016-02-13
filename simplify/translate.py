@@ -5,7 +5,7 @@ import argparse
 
 import numpy
 import cPickle as pkl
-
+import theano
 from nmt import (build_sampler, gen_sample, load_params,
                  init_params, init_tparams)
 

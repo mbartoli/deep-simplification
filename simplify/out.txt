@@ -1,0 +1,344 @@
+USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root         2  0.0  0.0      0     0 ?        S    Feb06   0:00 [kthreadd]
+root         3  0.0  0.0      0     0 ?        S    Feb06   0:10  \_ [ksoftirqd/0]
+root         5  0.0  0.0      0     0 ?        S<   Feb06   0:00  \_ [kworker/0:0H]
+root         7  0.0  0.0      0     0 ?        S    Feb06   1:45  \_ [rcu_sched]
+root         8  0.0  0.0      0     0 ?        S    Feb06   0:22  \_ [rcuos/0]
+root         9  0.0  0.0      0     0 ?        S    Feb06   2:44  \_ [rcuos/1]
+root        10  0.0  0.0      0     0 ?        S    Feb06   0:22  \_ [rcuos/2]
+root        11  0.0  0.0      0     0 ?        S    Feb06   0:26  \_ [rcuos/3]
+root        12  0.0  0.0      0     0 ?        S    Feb06   0:10  \_ [rcuos/4]
+root        13  0.0  0.0      0     0 ?        S    Feb06   0:12  \_ [rcuos/5]
+root        14  0.0  0.0      0     0 ?        S    Feb06   0:12  \_ [rcuos/6]
+root        15  0.0  0.0      0     0 ?        S    Feb06   0:13  \_ [rcuos/7]
+root        16  0.0  0.0      0     0 ?        S    Feb06   0:00  \_ [rcu_bh]
+root        17  0.0  0.0      0     0 ?        S    Feb06   0:00  \_ [rcuob/0]
+root        18  0.0  0.0      0     0 ?        S    Feb06   0:00  \_ [rcuob/1]
+root        19  0.0  0.0      0     0 ?        S    Feb06   0:00  \_ [rcuob/2]
+root        20  0.0  0.0      0     0 ?        S    Feb06   0:00  \_ [rcuob/3]
+root        21  0.0  0.0      0     0 ?        S    Feb06   0:00  \_ [rcuob/4]
+root        22  0.0  0.0      0     0 ?        S    Feb06   0:00  \_ [rcuob/5]
+root        23  0.0  0.0      0     0 ?        S    Feb06   0:00  \_ [rcuob/6]
+root        24  0.0  0.0      0     0 ?        S    Feb06   0:00  \_ [rcuob/7]
+root        25  0.0  0.0      0     0 ?        S    Feb06   0:00  \_ [migration/0]
+root        26  0.0  0.0      0     0 ?        S    Feb06   0:00  \_ [watchdog/0]
+root        27  0.0  0.0      0     0 ?        S    Feb06   0:00  \_ [watchdog/1]
+root        28  0.0  0.0      0     0 ?        S    Feb06   0:00  \_ [migration/1]
+root        29  0.0  0.0      0     0 ?        S    Feb06   0:08  \_ [ksoftirqd/1]
+root        31  0.0  0.0      0     0 ?        S<   Feb06   0:00  \_ [kworker/1:0H]
+root        32  0.0  0.0      0     0 ?        S    Feb06   0:00  \_ [watchdog/2]
+root        33  0.0  0.0      0     0 ?        S    Feb06   0:00  \_ [migration/2]
+root        34  0.0  0.0      0     0 ?        S    Feb06   0:03  \_ [ksoftirqd/2]
+root        36  0.0  0.0      0     0 ?        S<   Feb06   0:00  \_ [kworker/2:0H]
+root        37  0.0  0.0      0     0 ?        S    Feb06   0:00  \_ [watchdog/3]
+root        38  0.0  0.0      0     0 ?        S    Feb06   0:00  \_ [migration/3]
+root        39  0.0  0.0      0     0 ?        S    Feb06   0:02  \_ [ksoftirqd/3]
+root        41  0.0  0.0      0     0 ?        S<   Feb06   0:00  \_ [kworker/3:0H]
+root        42  0.0  0.0      0     0 ?        S    Feb06   0:00  \_ [watchdog/4]
+root        43  0.0  0.0      0     0 ?        S    Feb06   0:00  \_ [migration/4]
+root        44  0.0  0.0      0     0 ?        S    Feb06   1:04  \_ [ksoftirqd/4]
+root        46  0.0  0.0      0     0 ?        S<   Feb06   0:00  \_ [kworker/4:0H]
+root        47  0.0  0.0      0     0 ?        S    Feb06   0:00  \_ [watchdog/5]
+root        48  0.0  0.0      0     0 ?        S    Feb06   0:00  \_ [migration/5]
+root        49  0.0  0.0      0     0 ?        S    Feb06   0:36  \_ [ksoftirqd/5]
+root        51  0.0  0.0      0     0 ?        S<   Feb06   0:00  \_ [kworker/5:0H]
+root        52  0.0  0.0      0     0 ?        S    Feb06   0:00  \_ [watchdog/6]
+root        53  0.0  0.0      0     0 ?        S    Feb06   0:00  \_ [migration/6]
+root        54  0.0  0.0      0     0 ?        S    Feb06   0:00  \_ [ksoftirqd/6]
+root        56  0.0  0.0      0     0 ?        S<   Feb06   0:00  \_ [kworker/6:0H]
+root        57  0.0  0.0      0     0 ?        S    Feb06   0:00  \_ [watchdog/7]
+root        58  0.0  0.0      0     0 ?        S    Feb06   0:00  \_ [migration/7]
+root        59  0.0  0.0      0     0 ?        S    Feb06   0:00  \_ [ksoftirqd/7]
+root        61  0.0  0.0      0     0 ?        S<   Feb06   0:00  \_ [kworker/7:0H]
+root        62  0.0  0.0      0     0 ?        S<   Feb06   0:00  \_ [khelper]
+root        63  0.0  0.0      0     0 ?        S    Feb06   0:00  \_ [kdevtmpfs]
+root        64  0.0  0.0      0     0 ?        S<   Feb06   0:00  \_ [netns]
+root        65  0.0  0.0      0     0 ?        S    Feb06   0:00  \_ [khungtaskd]
+root        66  0.0  0.0      0     0 ?        S<   Feb06   0:00  \_ [writeback]
+root        67  0.0  0.0      0     0 ?        SN   Feb06   0:00  \_ [ksmd]
+root        68  0.0  0.0      0     0 ?        SN   Feb06   0:34  \_ [khugepaged]
+root        69  0.0  0.0      0     0 ?        S<   Feb06   0:00  \_ [crypto]
+root        70  0.0  0.0      0     0 ?        S<   Feb06   0:00  \_ [kintegrityd]
+root        71  0.0  0.0      0     0 ?        S<   Feb06   0:00  \_ [bioset]
+root        72  0.0  0.0      0     0 ?        S<   Feb06   0:00  \_ [kblockd]
+root        73  0.0  0.0      0     0 ?        S<   Feb06   0:00  \_ [ata_sff]
+root        74  0.0  0.0      0     0 ?        S    Feb06   0:00  \_ [khubd]
+root        75  0.0  0.0      0     0 ?        S<   Feb06   0:00  \_ [md]
+root        76  0.0  0.0      0     0 ?        S<   Feb06   0:00  \_ [devfreq_wq]
+root        80  0.0  0.0      0     0 ?        S    Feb06   1:15  \_ [kswapd0]
+root        81  0.0  0.0      0     0 ?        S<   Feb06   0:00  \_ [vmstat]
+root        82  0.0  0.0      0     0 ?        S    Feb06   0:00  \_ [fsnotify_mark]
+root        83  0.0  0.0      0     0 ?        S    Feb06   0:00  \_ [ecryptfs-kthrea]
+root        95  0.0  0.0      0     0 ?        S<   Feb06   0:00  \_ [kthrotld]
+root        96  0.0  0.0      0     0 ?        S<   Feb06   0:00  \_ [acpi_thermal_pm]
+root        99  0.0  0.0      0     0 ?        S<   Feb06   0:00  \_ [ipv6_addrconf]
+root       119  0.0  0.0      0     0 ?        S<   Feb06   0:00  \_ [deferwq]
+root       120  0.0  0.0      0     0 ?        S<   Feb06   0:00  \_ [charger_manager]
+root       176  0.0  0.0      0     0 ?        S<   Feb06   0:00  \_ [kpsmoused]
+root       178  0.0  0.0      0     0 ?        S    Feb06   0:00  \_ [scsi_eh_0]
+root       180  0.0  0.0      0     0 ?        S<   Feb06   0:00  \_ [scsi_tmf_0]
+root       182  0.0  0.0      0     0 ?        S    Feb06   0:00  \_ [scsi_eh_1]
+root       184  0.0  0.0      0     0 ?        S<   Feb06   0:00  \_ [scsi_tmf_1]
+root       187  0.0  0.0      0     0 ?        S    Feb06   0:00  \_ [scsi_eh_2]
+root       189  0.0  0.0      0     0 ?        S<   Feb06   0:00  \_ [scsi_tmf_2]
+root       190  0.0  0.0      0     0 ?        S    Feb06   0:00  \_ [scsi_eh_3]
+root       191  0.0  0.0      0     0 ?        S<   Feb06   0:00  \_ [scsi_tmf_3]
+root       192  0.0  0.0      0     0 ?        S    Feb06   0:00  \_ [scsi_eh_4]
+root       193  0.0  0.0      0     0 ?        S<   Feb06   0:00  \_ [scsi_tmf_4]
+root       197  0.0  0.0      0     0 ?        S    Feb06   0:00  \_ [scsi_eh_5]
+root       198  0.0  0.0      0     0 ?        S<   Feb06   0:00  \_ [scsi_tmf_5]
+root       266  0.0  0.0      0     0 ?        S    Feb06   0:00  \_ [scsi_eh_6]
+root       267  0.0  0.0      0     0 ?        S<   Feb06   0:00  \_ [scsi_tmf_6]
+root       268  0.1  0.0      0     0 ?        S    Feb06   4:48  \_ [usb-storage]
+root       273  0.0  0.0      0     0 ?        S    Feb06   0:00  \_ [scsi_eh_8]
+root       274  0.0  0.0      0     0 ?        S<   Feb06   0:00  \_ [scsi_tmf_8]
+root       278  0.0  0.0      0     0 ?        S<   Feb06   0:00  \_ [kworker/7:1H]
+root       279  0.0  0.0      0     0 ?        S<   Feb06   0:00  \_ [kworker/4:1H]
+root       280  0.0  0.0      0     0 ?        S<   Feb06   0:00  \_ [kworker/5:1H]
+root       283  0.0  0.0      0     0 ?        S<   Feb06   0:00  \_ [kworker/0:1H]
+root       284  0.0  0.0      0     0 ?        S<   Feb06   0:00  \_ [kworker/2:1H]
+root       287  0.0  0.0      0     0 ?        S<   Feb06   0:00  \_ [kworker/1:1H]
+root       288  0.0  0.0      0     0 ?        S<   Feb06   0:00  \_ [kworker/3:1H]
+root       313  0.0  0.0      0     0 ?        S<   Feb06   0:00  \_ [kdmflush]
+root       314  0.0  0.0      0     0 ?        S<   Feb06   0:00  \_ [bioset]
+root       315  0.0  0.0      0     0 ?        S<   Feb06   0:00  \_ [kcryptd_io]
+root       316  0.0  0.0      0     0 ?        S<   Feb06   0:00  \_ [kcryptd]
+root       317  0.0  0.0      0     0 ?        S<   Feb06   0:00  \_ [bioset]
+root       328  0.0  0.0      0     0 ?        S<   Feb06   0:00  \_ [kdmflush]
+root       329  0.0  0.0      0     0 ?        S<   Feb06   0:00  \_ [bioset]
+root       330  0.0  0.0      0     0 ?        S<   Feb06   0:00  \_ [kdmflush]
+root       332  0.0  0.0      0     0 ?        S<   Feb06   0:00  \_ [bioset]
+root       353  0.0  0.0      0     0 ?        S    Feb06   0:08  \_ [jbd2/dm-1-8]
+root       354  0.0  0.0      0     0 ?        S<   Feb06   0:00  \_ [ext4-rsv-conver]
+root       584  0.0  0.0      0     0 ?        S<   Feb06   0:00  \_ [ext4-rsv-conver]
+root       670  0.0  0.0      0     0 ?        S    Feb06   0:00  \_ [irq/47-mei_me]
+root       708  0.0  0.0      0     0 ?        S<   Feb06   0:00  \_ [hd-audio0]
+root       712  0.0  0.0      0     0 ?        S<   Feb06   0:00  \_ [hd-audio2]
+root       715  0.0  0.0      0     0 ?        S<   Feb06   0:00  \_ [hd-audio1]
+root       824  0.0  0.0      0     0 ?        S<   Feb06   0:00  \_ [kvm-irqfd-clean]
+root       930  0.0  0.0      0     0 ?        S<   Feb06   0:00  \_ [kworker/6:1H]
+root      1223  0.0  0.0      0     0 ?        S<   Feb06   0:00  \_ [krfcommd]
+root      1575  0.0  0.0      0     0 ?        S    Feb06   0:00  \_ [kauditd]
+root      1692  0.0  0.0      0     0 ?        S<   Feb06   0:00  \_ [iprt]
+root      3380  0.0  0.0      0     0 ?        S    Feb06   0:00  \_ [jbd2/sde1-8]
+root      3381  0.0  0.0      0     0 ?        S<   Feb06   0:00  \_ [ext4-rsv-conver]
+root      3394  0.0  0.0      0     0 ?        S    Feb06   0:00  \_ [jbd2/sdg-8]
+root      3395  0.0  0.0      0     0 ?        S<   Feb06   0:00  \_ [ext4-rsv-conver]
+root      3396  0.0  0.0      0     0 ?        S    Feb06   0:00  \_ [jbd2/sdf-8]
+root      3397  0.0  0.0      0     0 ?        S<   Feb06   0:00  \_ [ext4-rsv-conver]
+root     21376  0.0  0.0      0     0 ?        S    Feb07   0:00  \_ [jbd2/sdb1-8]
+root     21377  0.0  0.0      0     0 ?        S<   Feb07   0:00  \_ [ext4-rsv-conver]
+root     18908  0.0  0.0      0     0 ?        S    03:24   0:00  \_ [scsi_eh_10]
+root     18909  0.0  0.0      0     0 ?        S<   03:24   0:00  \_ [scsi_tmf_10]
+root     18910  0.0  0.0      0     0 ?        S    03:24   0:00  \_ [usb-storage]
+root     27638  0.0  0.0      0     0 ?        S    11:31   0:00  \_ [jbd2/sdh2-8]
+root     27639  0.0  0.0      0     0 ?        S<   11:31   0:00  \_ [ext4-rsv-conver]
+root      5525  0.0  0.0      0     0 ?        S    17:12   0:00  \_ [kworker/5:2]
+root      5893  0.0  0.0      0     0 ?        S    17:33   0:01  \_ [kworker/u16:1]
+root      5969  0.0  0.0      0     0 ?        S    17:37   0:00  \_ [kworker/5:0]
+root      6529  0.0  0.0      0     0 ?        S    18:10   0:00  \_ [kworker/1:1]
+root      6970  0.0  0.0      0     0 ?        S    18:15   0:01  \_ [kworker/7:0]
+root      7536  0.0  0.0      0     0 ?        S    18:23   0:01  \_ [kworker/3:0]
+root      7605  0.0  0.0      0     0 ?        S    18:26   0:01  \_ [kworker/6:1]
+root      7976  0.0  0.0      0     0 ?        S    18:36   0:00  \_ [kworker/4:0]
+root      8166  0.0  0.0      0     0 ?        S    18:44   0:01  \_ [kworker/2:0]
+root      8624  0.0  0.0      0     0 ?        S    19:02   0:00  \_ [kworker/7:2]
+root      8672  0.0  0.0      0     0 ?        S    19:05   0:00  \_ [kworker/2:1]
+root      8689  0.0  0.0      0     0 ?        S    19:06   0:01  \_ [kworker/0:2]
+root      8937  0.0  0.0      0     0 ?        S    19:20   0:00  \_ [kworker/6:0]
+root      8981  0.0  0.0      0     0 ?        S    19:20   0:00  \_ [kworker/1:0]
+root      9264  0.0  0.0      0     0 ?        S    19:23   0:00  \_ [kworker/0:1]
+root      9275  0.0  0.0      0     0 ?        S    19:24   0:00  \_ [kworker/3:2]
+root      9297  0.0  0.0      0     0 ?        S    19:25   0:00  \_ [kworker/4:1]
+root     10512  0.0  0.0      0     0 ?        S    19:41   0:00  \_ [kworker/u16:2]
+root     10800  0.0  0.0      0     0 ?        S    19:51   0:00  \_ [kworker/6:2]
+root     10824  0.0  0.0      0     0 ?        S    19:51   0:00  \_ [kworker/u16:0]
+root     10898  0.0  0.0      0     0 ?        S    19:53   0:00  \_ [kworker/0:0]
+root         1  0.0  0.0  34020  4504 ?        Ss   Feb06   0:01 /sbin/init
+root       573  0.0  0.0  19876  2276 ?        S    Feb06   0:00 upstart-udev-bridge --daemon
+root       588  0.0  0.0  52540  3796 ?        Ss   Feb06   0:00 /lib/systemd/systemd-udevd --daemon
+root      1042  0.0  0.0  15396  1884 ?        S    Feb06   0:00 upstart-socket-bridge --daemon
+message+  1127  0.0  0.0  40644  3924 ?        Ss   Feb06   0:26 dbus-daemon --system --fork
+syslog    1142  0.0  0.0 255848  3940 ?        Ssl  Feb06   0:00 rsyslogd
+root      1155  0.0  0.0 330244  5748 ?        Ssl  Feb06   0:00 /usr/sbin/ModemManager
+root      1165  0.0  0.0  19300  2032 ?        Ss   Feb06   0:00 /usr/sbin/bluetoothd
+root      1173  0.0  0.0  35300  2992 ?        Ss   Feb06   0:00 /lib/systemd/systemd-logind
+root      1215  0.0  0.0  15412  1796 ?        S    Feb06   0:00 upstart-file-bridge --daemon
+avahi     1231  0.0  0.0  33496  3752 ?        S    Feb06   0:03 avahi-daemon: running [cc.local]
+avahi     1233  0.0  0.0  32228   256 ?        S    Feb06   0:00  \_ avahi-daemon: chroot helper
+root      1286  0.0  0.0 345216  9588 ?        Ssl  Feb06   0:01 NetworkManager
+root      2239  0.0  0.0   8348  4984 ?        S    Feb06   0:00  \_ /sbin/dhclient -d -sf /usr/lib/NetworkManager/nm-dhcp-client.action -pf /run/sendsigs.omit.d/network-manager.dhclient-eth0.pid -lf /var/lib/NetworkManager/dhclient-7d6276f9-ad2a-4392-b593-7f2be7d84f61-eth0.lease -cf /var/lib/NetworkManager/dhclient-eth0.conf eth0
+nobody    2529  0.0  0.0  27220  2428 ?        S    Feb06   0:01  \_ /usr/sbin/dnsmasq --no-resolv --keep-in-foreground --no-hosts --bind-interfaces --pid-file=/run/sendsigs.omit.d/network-manager.dnsmasq.pid --listen-address=127.0.1.1 --conf-file=/var/run/NetworkManager/dnsmasq.conf --cache-size=0 --proxy-dnssec --enable-dbus=org.freedesktop.NetworkManager.dnsmasq --conf-dir=/etc/NetworkManager/dnsmasq.d
+root      1299  0.0  0.0 288540  7576 ?        Sl   Feb06   0:03 /usr/lib/policykit-1/polkitd --no-debug
+root      1349  0.0  0.0  20020  1952 tty4     Ss+  Feb06   0:00 /sbin/getty -8 38400 tty4
+root      1353  0.0  0.0  20020  1952 tty5     Ss+  Feb06   0:00 /sbin/getty -8 38400 tty5
+root      1360  0.0  0.0  20020  1864 tty2     Ss+  Feb06   0:00 /sbin/getty -8 38400 tty2
+root      1361  0.0  0.0  20020  1984 tty3     Ss+  Feb06   0:00 /sbin/getty -8 38400 tty3
+root      1364  0.0  0.0   4448   772 ?        S<s  Feb06   0:00 /bin/sh -e /proc/self/fd/9
+root      1407  0.0  0.0   4448   688 ?        S<   Feb06   0:00  \_ /bin/sh /usr/sbin/start_pms
+root      2306  0.0  0.3 576864 123616 ?       S<l  Feb06   1:01      \_ ./Plex Media Server
+root      2320  0.0  0.1 1857020 57016 ?       SNl  Feb06   2:08          \_ Plex Plug-in [com.plexapp.system] /usr/lib/plexmediaserver/Resources/Plug-ins-f38ac80/Framework.bundle/Contents/Resources/Versions/2/Python/bootstrap.pyc --server-version 0.9.12.19.1537-f38ac80 /usr/lib/plexmediaserver/Resources/Plug-ins-f38ac80/System.bundle
+root      2368  0.0  0.2 426316 87672 ?        S<l  Feb06   0:43          \_ /usr/lib/plexmediaserver/Plex DLNA Server
+root      1365  0.0  0.0  20020  1948 tty6     Ss+  Feb06   0:00 /sbin/getty -8 38400 tty6
+root      1422  0.0  0.0  61376  5336 ?        Ss   Feb06   0:00 /usr/sbin/sshd -D
+root     10307  0.0  0.0 106300  6804 ?        Ss   19:40   0:00  \_ sshd: m [priv]      
+m        10351  0.0  0.0 106300  3328 ?        S    19:41   0:00      \_ sshd: m@pts/36      
+m        10352  0.0  0.0  20160  6556 pts/36   Ss   19:41   0:00          \_ -bash
+m        10480  0.0  0.0  31340  2832 pts/36   S+   19:41   0:00              \_ screen -rD
+root      1425  0.0  0.0  19196  2164 ?        Ss   Feb06   0:05 /usr/sbin/irqbalance
+root      1431  0.0  0.0  23660  2280 ?        Ss   Feb06   0:00 cron
+whoopsie  1496  0.0  0.0 435496  9612 ?        Ssl  Feb06   0:00 whoopsie
+root      1511  0.0  0.0  75724  6804 ?        Ss   Feb06   0:00 /usr/sbin/cups-browsed
+kernoops  1535  0.0  0.0  37148  2488 ?        Ss   Feb06   0:01 /usr/sbin/kerneloops
+root      1581  0.0  0.0   4372  1632 ?        Ss   Feb06   0:03 acpid -c /etc/acpi/events -s /var/run/acpid.socket
+root      1598  0.0  0.0 269672  7692 ?        SLsl Feb06   0:00 lightdm
+root      1609  2.1  0.4 683804 140536 tty7    Ssl+ Feb06  69:26  \_ /usr/bin/X -core :0 -seat seat0 -auth /var/run/lightdm/root/:0 -nolisten tcp vt7 -novtswitch
+root      1956  0.0  0.0 170800  7160 ?        Sl   Feb06   0:00  \_ lightdm --session-child 12 19
+m         2827  0.0  0.0  32324  3288 ?        Ss   Feb06   0:01      \_ init --user
+m         2912  0.0  0.0  33488  4360 ?        Ss   Feb06   0:14          \_ dbus-daemon --fork --session --address=unix:abstract=/tmp/dbus-HuJLrMNHJW
+m         2923  0.0  0.0  22304  2116 ?        Ss   Feb06   0:00          \_ upstart-event-bridge
+m         2931  0.0  0.0  78324  3644 ?        Ss   Feb06   0:00          \_ /usr/lib/x86_64-linux-gnu/hud/window-stack-bridge
+m         2950  0.0  0.0  22376  1624 ?        S    Feb06   0:02          \_ upstart-dbus-bridge --daemon --session --user --bus-name session
+m         2951  0.0  0.0  22312   116 ?        S    Feb06   0:00          \_ upstart-dbus-bridge --daemon --system --user --bus-name system
+m         2956  0.0  0.0  22568  1836 ?        S    Feb06   0:00          \_ upstart-file-bridge --daemon --user
+m         2959  0.0  0.0 562724 18576 ?        Sl   Feb06   0:13          \_ /usr/lib/x86_64-linux-gnu/bamf/bamfdaemon
+m         2962  0.0  0.0 337576  5136 ?        Sl   Feb06   0:00          \_ /usr/lib/at-spi2-core/at-spi-bus-launcher
+m         2974  0.0  0.0  31368  3160 ?        S    Feb06   0:03          |   \_ /bin/dbus-daemon --config-file=/etc/at-spi2/accessibility.conf --nofork --print-address 3
+m         2963  0.0  0.0 369884 26272 ?        Ssl  Feb06   1:32          \_ /usr/bin/ibus-daemon --daemonize --xim
+m         3071  0.0  0.0 280884  5460 ?        Sl   Feb06   0:00          |   \_ /usr/lib/ibus/ibus-dconf
+m         3076  0.0  0.0 501924 26172 ?        Sl   Feb06   0:21          |   \_ /usr/lib/ibus/ibus-ui-gtk3
+m         3191  0.0  0.0 205152  5620 ?        Sl   Feb06   0:13          |   \_ /usr/lib/ibus/ibus-engine-simple
+m         2980  0.0  0.0 125016  5692 ?        Sl   Feb06   0:09          \_ /usr/lib/at-spi2-core/at-spi2-registryd --use-gnome-session
+m         2991  0.0  0.0 484504  6396 ?        Sl   Feb06   0:00          \_ /usr/lib/gvfs/gvfsd
+m         2999  0.0  0.0 345668  5344 ?        Sl   Feb06   0:00          \_ /usr/lib/gvfs/gvfsd-fuse /run/user/1000/gvfs -f -o big_writes
+m         3010  0.0  0.0 810020 24804 ?        Ssl  Feb06   0:05          \_ /usr/lib/unity-settings-daemon/unity-settings-daemon
+m         3015  0.0  0.3 833972 109120 ?       Ssl  Feb06   0:13          \_ /usr/lib/x86_64-linux-gnu/hud/hud-service
+m         3019  0.0  0.0 575712 18016 ?        Ssl  Feb06   0:01          \_ gnome-session --session=ubuntu
+m         3264  0.9  0.7 2271700 234076 ?      Sl   Feb06  31:11          |   \_ compiz
+m         3273  0.0  0.0 363144 13360 ?        Sl   Feb06   0:00          |   \_ /usr/bin/python -O /usr/share/wicd/gtk/wicd-client.py --tray
+m         3274  0.0  0.0 550952 15196 ?        Sl   Feb06   0:01          |   \_ /usr/lib/unity-settings-daemon/unity-fallback-mount-helper
+m         3278  0.0  0.0 687680 26424 ?        SLl  Feb06   0:00          |   \_ nm-applet
+m         3279  0.0  0.2 1749316 71384 ?       Sl   Feb06   0:49          |   \_ nautilus -n
+m         3281  0.0  0.0 646072 23296 ?        Sl   Feb06   0:00          |   \_ /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1
+m         3860  0.0  0.0 455164 14728 ?        Sl   Feb06   0:00          |   \_ telepathy-indicator
+m         4192  0.0  0.0 574144 22400 ?        Sl   Feb06   0:01          |   \_ update-notifier
+root      4221  0.0  0.0      0     0 ?        Z    Feb06   0:00          |   |   \_ [pkexec] <defunct>
+m         4784  0.0  0.0 378008  6392 ?        Sl   Feb06   0:00          |   \_ /usr/lib/x86_64-linux-gnu/deja-dup/deja-dup-monitor
+m         3029  0.0  0.1 595268 52752 ?        Ssl  Feb06   0:31          \_ /usr/lib/unity/unity-panel-service
+m         3083  0.0  0.0 386972 11324 ?        Sl   Feb06   0:00          \_ /usr/lib/ibus/ibus-x11 --kill-daemon
+m         3107  0.0  0.0 728172 18576 ?        Sl   Feb06   0:00          \_ /usr/lib/x86_64-linux-gnu/indicator-keyboard-service --use-gtk
+m         3111  0.0  0.0 335116  3668 ?        Ssl  Feb06   0:00          \_ /usr/lib/x86_64-linux-gnu/indicator-messages/indicator-messages-service
+m         3112  0.0  0.0 263644  4552 ?        Ssl  Feb06   0:00          \_ /usr/lib/x86_64-linux-gnu/indicator-bluetooth/indicator-bluetooth-service
+m         3120  0.0  0.0 278456  7184 ?        Ssl  Feb06   0:00          \_ /usr/lib/x86_64-linux-gnu/indicator-power/indicator-power-service
+m         3122  0.0  0.0 1089516 10240 ?       Ssl  Feb06   0:01          \_ /usr/lib/x86_64-linux-gnu/indicator-datetime/indicator-datetime-service
+m         3128  0.0  0.0 480120 10812 ?        Ssl  Feb06   0:03          \_ /usr/lib/x86_64-linux-gnu/indicator-sound/indicator-sound-service
+m         3129  0.0  0.0 438528 17160 ?        Ssl  Feb06   0:00          \_ /usr/lib/x86_64-linux-gnu/indicator-printers/indicator-printers-service
+m         3131  0.0  0.0 893732  9884 ?        Ssl  Feb06   0:02          \_ /usr/lib/x86_64-linux-gnu/indicator-session/indicator-session-service
+m         3144  0.0  0.0 286756  8144 ?        Ssl  Feb06   0:00          \_ /usr/lib/x86_64-linux-gnu/indicator-application/indicator-application-service
+m         3163  0.1  0.0 661424 10520 ?        S<l  Feb06   5:43          \_ /usr/bin/pulseaudio --start --log-target=syslog
+m         3167  0.0  0.0 964280 11044 ?        Sl   Feb06   0:00          \_ /usr/lib/evolution/evolution-source-registry
+m         3197  0.0  0.0 178308  4656 ?        Sl   Feb06   0:00          \_ /usr/lib/dconf/dconf-service
+m         3214  0.0  0.0 934460 12996 ?        Sl   Feb06   0:00          \_ /usr/lib/evolution/evolution-calendar-factory
+m         3258  0.0  0.1 559288 53108 ?        Sl   Feb06   0:26          \_ /usr/lib/x86_64-linux-gnu/notify-osd
+m         3302  0.0  0.0 364684  8160 ?        Sl   Feb06   0:01          \_ /usr/lib/gvfs/gvfs-udisks2-volume-monitor
+m         3328  0.0  0.0 212580  4856 ?        Sl   Feb06   0:00          \_ /usr/lib/gvfs/gvfs-gphoto2-volume-monitor
+m         3332  0.0  0.0 200280  4476 ?        Sl   Feb06   0:00          \_ /usr/lib/gvfs/gvfs-mtp-volume-monitor
+m         3336  0.0  0.0 285976  4960 ?        Sl   Feb06   0:00          \_ /usr/lib/gvfs/gvfs-afc-volume-monitor
+m         3362  0.0  0.0 433348  5872 ?        Sl   Feb06   0:07          \_ /usr/lib/gvfs/gvfsd-trash --spawner :1.9 /org/gtk/gvfs/exec_spaw/0
+m         3385  0.0  0.0 270384  3824 ?        Sl   Feb06   0:00          \_ /usr/lib/gvfs/gvfsd-burn --spawner :1.9 /org/gtk/gvfs/exec_spaw/1
+m         3431  0.0  0.0  50036  4136 ?        S    Feb06   0:00          \_ /usr/lib/x86_64-linux-gnu/gconf/gconfd-2
+m         3470  0.0  0.0 665196 13796 ?        Sl   Feb06   0:01          \_ /usr/lib/x86_64-linux-gnu/unity-scope-home/unity-scope-home
+m         3481  0.0  0.0 659512 14488 ?        Sl   Feb06   0:02          \_ /usr/bin/unity-scope-loader applications/applications.scope applications/scopes.scope commands.scope
+m         3483  0.0  0.0 815788  9356 ?        Sl   Feb06   0:00          \_ /usr/lib/x86_64-linux-gnu/unity-lens-files/unity-files-daemon
+m         3492  0.0  0.0 349144  6744 ?        Sl   Feb06   0:00          \_ /usr/bin/zeitgeist-daemon
+m         3498  0.0  0.0 337772  4552 ?        Sl   Feb06   0:01          \_ /usr/lib/x86_64-linux-gnu/unity-lens-music/unity-music-daemon
+m         3505  0.0  0.1 373184 44872 ?        Sl   Feb06   0:03          \_ /usr/lib/x86_64-linux-gnu/zeitgeist-fts
+m         3519  0.0  0.0  11416   332 ?        S    Feb06   0:00          |   \_ /bin/cat
+m         3507  0.0  0.0 443320 13280 ?        Sl   Feb06   0:04          \_ zeitgeist-datahub
+m         3661  0.0  0.0 1160284 23064 ?       Sl   Feb06   0:03          \_ /usr/lib/gvfs/gvfsd-http --spawner :1.9 /org/gtk/gvfs/exec_spaw/2
+m         3866  0.0  0.0 322480  9428 ?        Sl   Feb06   0:00          \_ /usr/lib/telepathy/mission-control-5
+m         3933  0.0  0.0 124896  5228 ?        Sl   Feb06   0:00          \_ /usr/lib/gvfs/gvfsd-metadata
+m         3948  0.0  0.0 664296 30980 ?        Sl   Feb06   1:26          \_ gnome-terminal
+m         3956  0.0  0.0   6820   568 ?        S    Feb06   0:00          |   \_ gnome-pty-helper
+m         3957  0.0  0.0  20144  3072 pts/4    Ss+  Feb06   0:00          |   \_ bash
+m         6583  0.0  0.0  20260  6832 pts/33   Ss+  18:13   0:00          |   \_ bash
+m         4239  0.0  0.0  33912  4632 ?        Ss   Feb06   0:22          \_ SCREEN
+m         4240  0.0  0.0  20184  2668 pts/0    Ss+  Feb06   0:00          |   \_ /bin/bash
+m         4416  0.0  0.0  22664  5052 pts/10   Ss+  Feb06   0:31          |   \_ /bin/bash
+m         5821  0.0  0.0 830120 15480 pts/10   Tl   Feb06   0:00          |   |   \_ qlua
+m         4594  0.0  0.0  20300  2828 pts/15   Ss   Feb06   0:00          |   \_ /bin/bash
+m        14044  0.0  0.0 577600 27288 pts/15   Sl+  Feb06   0:22          |   |   \_ docker run -p 3000:3000 -it restful-ner /bin/bash
+m         6677  0.0  0.0  20392  4728 pts/17   Ss+  Feb06   0:00          |   \_ /bin/bash
+m        10866  0.0  0.0  20316  4232 pts/20   Ss+  Feb07   0:00          |   \_ /bin/bash
+m        11082  0.0  0.0  20300  3236 pts/29   Ss+  Feb07   0:00          |   \_ /bin/bash
+m        20546  0.0  0.0  20352  4636 pts/30   Ss+  Feb07   0:00          |   \_ /bin/bash
+m        22512 92.9  6.6 66643080 2103492 pts/30 Tl Feb07 1494:39          |   |   \_ python train_nmt.py
+m        20750  0.0  0.0  20656  5592 pts/31   Ss   Feb07   0:00          |   \_ /bin/bash
+m         7360  0.1  1.7 64316960 567308 pts/31 Tl  18:20   0:09          |       \_ python translate.py -n -p 8 /media/m/DT-HDD-3/git/deep-simplification/simplify/model_hal.npz ../data/normal-dict.tok.pkl ../data/simple-dict.tok.pkl ../data/validation/validation-normal.tok ../data/validation/validation-simple.tok
+m        10935  0.0  0.0  14840  2604 pts/31   R+   19:54   0:00          |       \_ ps auxf
+m         5019  1.0  0.5 3366552 160096 ?      Sl   Feb06  33:45          \_ /usr/bin/java -Dfile.encoding=UTF-8 -Dapp=CrashPlanDesktop -DappBaseName=CrashPlan -Xms20m -Xmx512m -Dsun.net.inetaddr.ttl=300 -Dnetworkaddress.cache.ttl=300 -Dsun.net.inetaddr.negative.ttl=0 -Dnetworkaddress.cache.negative.ttl=0 -Dc42.native.md5.enabled=false -classpath ./lib/com.backup42.desktop.jar:./lang:./skin com.backup42.desktop.CPDesktop
+m         5124  1.1  1.3 1701100 434240 ?      SLl  Feb06  37:56          \_ /opt/google/chrome/chrome    
+m         5132  0.0  0.0  11416   232 ?        S    Feb06   0:00          |   \_ cat
+m         5133  0.0  0.0  11416   336 ?        S    Feb06   0:00          |   \_ cat
+m         5136  0.0  0.0 344572 13508 ?        S    Feb06   0:00          |   \_ /opt/google/chrome/chrome --type=zygote
+m         5138  0.0  0.0  28032  2928 ?        S    Feb06   0:00          |   |   \_ /opt/google/chrome/nacl_helper
+m         5141  0.0  0.0 360964  6728 ?        S    Feb06   0:00          |   |   \_ /opt/google/chrome/chrome --type=zygote
+m         5219  0.0  0.7 1354596 235128 ?      Sl   Feb06   0:55          |   |       \_ /opt/google/chrome/chrome --type=renderer --lang=en-US --force-fieldtrials=AffiliationBasedMatching/EnabledThroughFieldTrial/AppBannerTriggering/Aggressive/CaptivePortalInterstitial/Enabled/*ChildAccountDetection/Disabled/*ClientSideDetectionModel/Model0/*CrossDevicePromo/1DaySingleProfile/DataReductionProxyUseDataSaverOnVPN/Enabled/*DomRel-Enable/enable/*ExtensionContentVerification/Enforce/*ExtensionDeveloperModeWarning/Default/InstanceID/Enabled/NewVideoRendererTrial/Enabled/*OmniboxBundledExperimentV1/Stable_EthersuggestPrefix_A2/PasswordBranding/Disabled/*PasswordGeneration/Disabled/ReportCertificateErrors/ShowAndPossiblySend/SHA1IdentityUIWarning/Enabled/SHA1ToolbarUIJanuary2016/Warning/SHA1ToolbarUIJanuary2017/Error/*SafeBrowsingIncidentReportingService/Default/SafeBrowsingReportPhishingErrorLink/Enabled/SafeBrowsingSocialEngineeringStrings/Enabled/*SlimmingPaint/EnableSlimmingPaint/*UMA-Population-Restrict/normal/*UMA-Uniformity-Trial-100-Percent/group_01/*UMA-Uniformity-Trial-20-Percent/group_01/*UMA-Uniformity-Trial-50-Percent/group_01/*UseDelayAgnosticAEC/DefaultEnabled/*VarationsServiceControl/Interval_30min/ --extension-process --enable-webrtc-hw-h264-encoding --enable-offline-auto-reload --enable-offline-auto-reload-visible-only --enable-delegated-renderer --num-raster-threads=4 --content-image-texture-target=3553,3553,3553,3553,3553,3553,3553,3553,3553,3553,3553,3553 --video-image-texture-target=3553 --disable-accelerated-video-decode --disable-webrtc-hw-encoding --disable-gpu-compositing --channel=5124.1.414872840 --v8-natives-passed-by-fd --v8-snapshot-passed-by-fd
+m         5224  0.0  0.1 809184 45864 ?        Sl   Feb06   0:57          |   |       \_ /opt/google/chrome/chrome --type=renderer --lang=en-US --force-fieldtrials=AffiliationBasedMatching/EnabledThroughFieldTrial/AppBannerTriggering/Aggressive/CaptivePortalInterstitial/Enabled/*ChildAccountDetection/Disabled/*ClientSideDetectionModel/Model0/*CrossDevicePromo/1DaySingleProfile/DataReductionProxyUseDataSaverOnVPN/Enabled/*DomRel-Enable/enable/*ExtensionContentVerification/Enforce/*ExtensionDeveloperModeWarning/Default/InstanceID/Enabled/NewVideoRendererTrial/Enabled/*OmniboxBundledExperimentV1/Stable_EthersuggestPrefix_A2/PasswordBranding/Disabled/*PasswordGeneration/Disabled/ReportCertificateErrors/ShowAndPossiblySend/SHA1IdentityUIWarning/Enabled/SHA1ToolbarUIJanuary2016/Warning/SHA1ToolbarUIJanuary2017/Error/*SafeBrowsingIncidentReportingService/Default/SafeBrowsingReportPhishingErrorLink/Enabled/SafeBrowsingSocialEngineeringStrings/Enabled/*SlimmingPaint/EnableSlimmingPaint/*UMA-Population-Restrict/normal/*UMA-Uniformity-Trial-100-Percent/group_01/*UMA-Uniformity-Trial-20-Percent/group_01/*UMA-Uniformity-Trial-50-Percent/group_01/*UseDelayAgnosticAEC/DefaultEnabled/*VarationsServiceControl/Interval_30min/ --extension-process --enable-webrtc-hw-h264-encoding --enable-offline-auto-reload --enable-offline-auto-reload-visible-only --enable-delegated-renderer --num-raster-threads=4 --content-image-texture-target=3553,3553,3553,3553,3553,3553,3553,3553,3553,3553,3553,3553 --video-image-texture-target=3553 --disable-accelerated-video-decode --disable-webrtc-hw-encoding --disable-gpu-compositing --channel=5124.2.23692540 --v8-natives-passed-by-fd --v8-snapshot-passed-by-fd
+m         5238  0.1  0.3 943904 105340 ?       Sl   Feb06   4:43          |   |       \_ /opt/google/chrome/chrome --type=renderer --lang=en-US --force-fieldtrials=AffiliationBasedMatching/EnabledThroughFieldTrial/AppBannerTriggering/Aggressive/CaptivePortalInterstitial/Enabled/*ChildAccountDetection/Disabled/*ClientSideDetectionModel/Model0/*CrossDevicePromo/1DaySingleProfile/DataReductionProxyUseDataSaverOnVPN/Enabled/*DomRel-Enable/enable/*ExtensionContentVerification/Enforce/*ExtensionDeveloperModeWarning/Default/InstanceID/Enabled/NewVideoRendererTrial/Enabled/*OmniboxBundledExperimentV1/Stable_EthersuggestPrefix_A2/PasswordBranding/Disabled/*PasswordGeneration/Disabled/ReportCertificateErrors/ShowAndPossiblySend/SHA1IdentityUIWarning/Enabled/SHA1ToolbarUIJanuary2016/Warning/SHA1ToolbarUIJanuary2017/Error/*SafeBrowsingIncidentReportingService/Default/SafeBrowsingReportPhishingErrorLink/Enabled/SafeBrowsingSocialEngineeringStrings/Enabled/*SlimmingPaint/EnableSlimmingPaint/*UMA-Population-Restrict/normal/*UMA-Uniformity-Trial-100-Percent/group_01/*UMA-Uniformity-Trial-20-Percent/group_01/*UMA-Uniformity-Trial-50-Percent/group_01/*UseDelayAgnosticAEC/DefaultEnabled/*VarationsServiceControl/Interval_30min/ --extension-process --enable-webrtc-hw-h264-encoding --enable-offline-auto-reload --enable-offline-auto-reload-visible-only --enable-delegated-renderer --num-raster-threads=4 --content-image-texture-target=3553,3553,3553,3553,3553,3553,3553,3553,3553,3553,3553,3553 --video-image-texture-target=3553 --disable-accelerated-video-decode --disable-webrtc-hw-encoding --disable-gpu-compositing --channel=5124.3.796995505 --v8-natives-passed-by-fd --v8-snapshot-passed-by-fd
+m         5253  0.0  0.1 794452 39852 ?        Sl   Feb06   0:02          |   |       \_ /opt/google/chrome/chrome --type=renderer --lang=en-US --force-fieldtrials=AffiliationBasedMatching/EnabledThroughFieldTrial/AppBannerTriggering/Aggressive/CaptivePortalInterstitial/Enabled/*ChildAccountDetection/Disabled/*ClientSideDetectionModel/Model0/*CrossDevicePromo/1DaySingleProfile/DataReductionProxyUseDataSaverOnVPN/Enabled/*DomRel-Enable/enable/*ExtensionContentVerification/Enforce/*ExtensionDeveloperModeWarning/Default/InstanceID/Enabled/NewVideoRendererTrial/Enabled/*OmniboxBundledExperimentV1/Stable_EthersuggestPrefix_A2/PasswordBranding/Disabled/*PasswordGeneration/Disabled/ReportCertificateErrors/ShowAndPossiblySend/SHA1IdentityUIWarning/Enabled/SHA1ToolbarUIJanuary2016/Warning/SHA1ToolbarUIJanuary2017/Error/*SafeBrowsingIncidentReportingService/Default/SafeBrowsingReportPhishingErrorLink/Enabled/SafeBrowsingSocialEngineeringStrings/Enabled/*SlimmingPaint/EnableSlimmingPaint/*UMA-Population-Restrict/normal/*UMA-Uniformity-Trial-100-Percent/group_01/*UMA-Uniformity-Trial-20-Percent/group_01/*UMA-Uniformity-Trial-50-Percent/group_01/*UseDelayAgnosticAEC/DefaultEnabled/*VarationsServiceControl/Interval_30min/ --extension-process --enable-webrtc-hw-h264-encoding --enable-offline-auto-reload --enable-offline-auto-reload-visible-only --enable-delegated-renderer --num-raster-threads=4 --content-image-texture-target=3553,3553,3553,3553,3553,3553,3553,3553,3553,3553,3553,3553 --video-image-texture-target=3553 --disable-accelerated-video-decode --disable-webrtc-hw-encoding --disable-gpu-compositing --channel=5124.4.602030745 --v8-natives-passed-by-fd --v8-snapshot-passed-by-fd
+m         5257  0.0  0.1 810172 46080 ?        Sl   Feb06   0:15          |   |       \_ /opt/google/chrome/chrome --type=renderer --lang=en-US --force-fieldtrials=AffiliationBasedMatching/EnabledThroughFieldTrial/AppBannerTriggering/Aggressive/CaptivePortalInterstitial/Enabled/*ChildAccountDetection/Disabled/*ClientSideDetectionModel/Model0/*CrossDevicePromo/1DaySingleProfile/DataReductionProxyUseDataSaverOnVPN/Enabled/*DomRel-Enable/enable/*ExtensionContentVerification/Enforce/*ExtensionDeveloperModeWarning/Default/InstanceID/Enabled/NewVideoRendererTrial/Enabled/*OmniboxBundledExperimentV1/Stable_EthersuggestPrefix_A2/PasswordBranding/Disabled/*PasswordGeneration/Disabled/ReportCertificateErrors/ShowAndPossiblySend/SHA1IdentityUIWarning/Enabled/SHA1ToolbarUIJanuary2016/Warning/SHA1ToolbarUIJanuary2017/Error/*SafeBrowsingIncidentReportingService/Default/SafeBrowsingReportPhishingErrorLink/Enabled/SafeBrowsingSocialEngineeringStrings/Enabled/*SlimmingPaint/EnableSlimmingPaint/*UMA-Population-Restrict/normal/*UMA-Uniformity-Trial-100-Percent/group_01/*UMA-Uniformity-Trial-20-Percent/group_01/*UMA-Uniformity-Trial-50-Percent/group_01/*UseDelayAgnosticAEC/DefaultEnabled/*VarationsServiceControl/Interval_30min/ --extension-process --enable-webrtc-hw-h264-encoding --enable-offline-auto-reload --enable-offline-auto-reload-visible-only --enable-delegated-renderer --num-raster-threads=4 --content-image-texture-target=3553,3553,3553,3553,3553,3553,3553,3553,3553,3553,3553,3553 --video-image-texture-target=3553 --disable-accelerated-video-decode --disable-webrtc-hw-encoding --disable-gpu-compositing --channel=5124.5.28620448 --v8-natives-passed-by-fd --v8-snapshot-passed-by-fd
+m         5262  0.0  0.1 771636 33620 ?        Sl   Feb06   0:03          |   |       \_ /opt/google/chrome/chrome --type=renderer --lang=en-US --force-fieldtrials=AffiliationBasedMatching/EnabledThroughFieldTrial/AppBannerTriggering/Aggressive/CaptivePortalInterstitial/Enabled/*ChildAccountDetection/Disabled/*ClientSideDetectionModel/Model0/*CrossDevicePromo/1DaySingleProfile/DataReductionProxyUseDataSaverOnVPN/Enabled/*DomRel-Enable/enable/*ExtensionContentVerification/Enforce/*ExtensionDeveloperModeWarning/Default/InstanceID/Enabled/NewVideoRendererTrial/Enabled/*OmniboxBundledExperimentV1/Stable_EthersuggestPrefix_A2/PasswordBranding/Disabled/*PasswordGeneration/Disabled/ReportCertificateErrors/ShowAndPossiblySend/SHA1IdentityUIWarning/Enabled/SHA1ToolbarUIJanuary2016/Warning/SHA1ToolbarUIJanuary2017/Error/*SafeBrowsingIncidentReportingService/Default/SafeBrowsingReportPhishingErrorLink/Enabled/SafeBrowsingSocialEngineeringStrings/Enabled/*SlimmingPaint/EnableSlimmingPaint/*UMA-Population-Restrict/normal/*UMA-Uniformity-Trial-100-Percent/group_01/*UMA-Uniformity-Trial-20-Percent/group_01/*UMA-Uniformity-Trial-50-Percent/group_01/*UseDelayAgnosticAEC/DefaultEnabled/*VarationsServiceControl/Interval_30min/ --extension-process --enable-webrtc-hw-h264-encoding --enable-offline-auto-reload --enable-offline-auto-reload-visible-only --enable-delegated-renderer --num-raster-threads=4 --content-image-texture-target=3553,3553,3553,3553,3553,3553,3553,3553,3553,3553,3553,3553 --video-image-texture-target=3553 --disable-accelerated-video-decode --disable-webrtc-hw-encoding --disable-gpu-compositing --channel=5124.6.1816635548 --v8-natives-passed-by-fd --v8-snapshot-passed-by-fd
+m         5284  0.0  0.0 754220 30924 ?        Sl   Feb06   0:00          |   |       \_ /opt/google/chrome/chrome --type=renderer --lang=en-US --force-fieldtrials=AffiliationBasedMatching/EnabledThroughFieldTrial/AppBannerTriggering/Aggressive/CaptivePortalInterstitial/Enabled/*ChildAccountDetection/Disabled/*ClientSideDetectionModel/Model0/*CrossDevicePromo/1DaySingleProfile/DataReductionProxyUseDataSaverOnVPN/Enabled/*DomRel-Enable/enable/*ExtensionContentVerification/Enforce/*ExtensionDeveloperModeWarning/Default/InstanceID/Enabled/NewVideoRendererTrial/Enabled/*OmniboxBundledExperimentV1/Stable_EthersuggestPrefix_A2/PasswordBranding/Disabled/*PasswordGeneration/Disabled/ReportCertificateErrors/ShowAndPossiblySend/SHA1IdentityUIWarning/Enabled/SHA1ToolbarUIJanuary2016/Warning/SHA1ToolbarUIJanuary2017/Error/*SafeBrowsingIncidentReportingService/Default/SafeBrowsingReportPhishingErrorLink/Enabled/SafeBrowsingSocialEngineeringStrings/Enabled/*SlimmingPaint/EnableSlimmingPaint/*UMA-Population-Restrict/normal/*UMA-Uniformity-Trial-100-Percent/group_01/*UMA-Uniformity-Trial-20-Percent/group_01/*UMA-Uniformity-Trial-50-Percent/group_01/*UseDelayAgnosticAEC/DefaultEnabled/*VarationsServiceControl/Interval_30min/ --extension-process --enable-webrtc-hw-h264-encoding --enable-offline-auto-reload --enable-offline-auto-reload-visible-only --enable-delegated-renderer --num-raster-threads=4 --content-image-texture-target=3553,3553,3553,3553,3553,3553,3553,3553,3553,3553,3553,3553 --video-image-texture-target=3553 --disable-accelerated-video-decode --disable-webrtc-hw-encoding --disable-gpu-compositing --channel=5124.7.2007564550 --v8-natives-passed-by-fd --v8-snapshot-passed-by-fd
+m         5403  0.0  0.2 861272 79824 ?        Sl   Feb06   0:09          |   |       \_ /opt/google/chrome/chrome --type=renderer --lang=en-US --force-fieldtrials=*AffiliationBasedMatching/EnabledThroughFieldTrial/AppBannerTriggering/Aggressive/CaptivePortalInterstitial/Enabled/*ChildAccountDetection/Disabled/*ClientSideDetectionModel/Model0/*CrossDevicePromo/1DaySingleProfile/DataReductionProxyUseDataSaverOnVPN/Enabled/*DomRel-Enable/enable/*ExtensionContentVerification/Enforce/*ExtensionDeveloperModeWarning/Default/InstanceID/Enabled/NewVideoRendererTrial/Enabled/*OmniboxBundledExperimentV1/Stable_EthersuggestPrefix_A2/PasswordBranding/Disabled/*PasswordGeneration/Disabled/ReportCertificateErrors/ShowAndPossiblySend/SHA1IdentityUIWarning/Enabled/SHA1ToolbarUIJanuary2016/Warning/SHA1ToolbarUIJanuary2017/Error/*SafeBrowsingIncidentReportingService/Default/SafeBrowsingReportPhishingErrorLink/Enabled/SafeBrowsingSocialEngineeringStrings/Enabled/*SlimmingPaint/EnableSlimmingPaint/*UMA-Population-Restrict/normal/*UMA-Uniformity-Trial-100-Percent/group_01/*UMA-Uniformity-Trial-20-Percent/group_01/*UMA-Uniformity-Trial-50-Percent/group_01/*UseDelayAgnosticAEC/DefaultEnabled/*VarationsServiceControl/Interval_30min/ --enable-offline-auto-reload --enable-offline-auto-reload-visible-only --enable-delegated-renderer --num-raster-threads=4 --content-image-texture-target=3553,3553,3553,3553,3553,3553,3553,3553,3553,3553,3553,3553 --video-image-texture-target=3553 --disable-accelerated-video-decode --disable-webrtc-hw-encoding --disable-gpu-compositing --channel=5124.14.1810222831 --v8-natives-passed-by-fd --v8-snapshot-passed-by-fd
+m         9556  0.0  0.2 828388 76716 ?        Sl   Feb07   0:03          |   |       \_ /opt/google/chrome/chrome --type=renderer --lang=en-US --force-fieldtrials=*AffiliationBasedMatching/EnabledThroughFieldTrial/AppBannerTriggering/Aggressive/CaptivePortalInterstitial/Enabled/*ChildAccountDetection/Disabled/*ClientSideDetectionModel/Model0/*CrossDevicePromo/1DaySingleProfile/DataReductionProxyUseDataSaverOnVPN/Enabled/*DomRel-Enable/enable/*ExtensionContentVerification/Enforce/*ExtensionDeveloperModeWarning/Default/InstanceID/Enabled/*NewVideoRendererTrial/Enabled/*OmniboxBundledExperimentV1/Stable_EthersuggestPrefix_A2/PasswordBranding/Disabled/*PasswordGeneration/Disabled/ReportCertificateErrors/ShowAndPossiblySend/SHA1IdentityUIWarning/Enabled/SHA1ToolbarUIJanuary2016/Warning/SHA1ToolbarUIJanuary2017/Error/*SafeBrowsingIncidentReportingService/Default/SafeBrowsingReportPhishingErrorLink/Enabled/SafeBrowsingSocialEngineeringStrings/Enabled/*SlimmingPaint/EnableSlimmingPaint/*UMA-Population-Restrict/normal/*UMA-Uniformity-Trial-100-Percent/group_01/*UMA-Uniformity-Trial-20-Percent/group_01/*UMA-Uniformity-Trial-50-Percent/group_01/*UseDelayAgnosticAEC/DefaultEnabled/*VarationsServiceControl/Interval_30min/ --enable-offline-auto-reload --enable-offline-auto-reload-visible-only --enable-delegated-renderer --num-raster-threads=4 --content-image-texture-target=3553,3553,3553,3553,3553,3553,3553,3553,3553,3553,3553,3553 --video-image-texture-target=3553 --disable-accelerated-video-decode --disable-webrtc-hw-encoding --disable-gpu-compositing --channel=5124.540.1207698700 --v8-natives-passed-by-fd --v8-snapshot-passed-by-fd
+m        15010  0.0  0.3 900860 114208 ?       Sl   00:48   0:12          |   |       \_ /opt/google/chrome/chrome --type=renderer --lang=en-US --force-fieldtrials=*AffiliationBasedMatching/EnabledThroughFieldTrial/AppBannerTriggering/Aggressive/CaptivePortalInterstitial/Enabled/*ChildAccountDetection/Disabled/*ClientSideDetectionModel/Model0/*CrossDevicePromo/1DaySingleProfile/DataReductionProxyUseDataSaverOnVPN/Enabled/*DomRel-Enable/enable/*ExtensionContentVerification/Enforce/*ExtensionDeveloperModeWarning/Default/InstanceID/Enabled/*NewVideoRendererTrial/Enabled/*OmniboxBundledExperimentV1/Stable_EthersuggestPrefix_A2/*PasswordBranding/Disabled/*PasswordGeneration/Disabled/ReportCertificateErrors/ShowAndPossiblySend/SHA1IdentityUIWarning/Enabled/SHA1ToolbarUIJanuary2016/Warning/SHA1ToolbarUIJanuary2017/Error/*SafeBrowsingIncidentReportingService/Default/SafeBrowsingReportPhishingErrorLink/Enabled/SafeBrowsingSocialEngineeringStrings/Enabled/*SlimmingPaint/EnableSlimmingPaint/*UMA-Population-Restrict/normal/*UMA-Uniformity-Trial-100-Percent/group_01/*UMA-Uniformity-Trial-20-Percent/group_01/*UMA-Uniformity-Trial-50-Percent/group_01/*UseDelayAgnosticAEC/DefaultEnabled/*VarationsServiceControl/Interval_30min/ --extension-process --enable-webrtc-hw-h264-encoding --enable-offline-auto-reload --enable-offline-auto-reload-visible-only --enable-delegated-renderer --num-raster-threads=4 --content-image-texture-target=3553,3553,3553,3553,3553,3553,3553,3553,3553,3553,3553,3553 --video-image-texture-target=3553 --disable-accelerated-video-decode --disable-webrtc-hw-encoding --disable-gpu-compositing --channel=5124.613.939442410 --v8-natives-passed-by-fd --v8-snapshot-passed-by-fd
+m         4561  0.0  0.4 878620 139852 ?       Sl   16:35   0:06          |   |       \_ /opt/google/chrome/chrome --type=renderer --lang=en-US --force-fieldtrials=*AffiliationBasedMatching/EnabledThroughFieldTrial/AppBannerTriggering/Aggressive/CaptivePortalInterstitial/Enabled/*ChildAccountDetection/Disabled/*ClientSideDetectionModel/Model0/*CrossDevicePromo/1DaySingleProfile/DataReductionProxyUseDataSaverOnVPN/Enabled/*DomRel-Enable/enable/*ExtensionContentVerification/Enforce/*ExtensionDeveloperModeWarning/Default/InstanceID/Enabled/*NewVideoRendererTrial/Enabled/*OmniboxBundledExperimentV1/Stable_EthersuggestPrefix_A2/*PasswordBranding/Disabled/*PasswordGeneration/Disabled/ReportCertificateErrors/ShowAndPossiblySend/SHA1IdentityUIWarning/Enabled/SHA1ToolbarUIJanuary2016/Warning/SHA1ToolbarUIJanuary2017/Error/*SafeBrowsingIncidentReportingService/Default/SafeBrowsingReportPhishingErrorLink/Enabled/SafeBrowsingSocialEngineeringStrings/Enabled/*SlimmingPaint/EnableSlimmingPaint/*UMA-Population-Restrict/normal/*UMA-Uniformity-Trial-100-Percent/group_01/*UMA-Uniformity-Trial-20-Percent/group_01/*UMA-Uniformity-Trial-50-Percent/group_01/*UseDelayAgnosticAEC/DefaultEnabled/*VarationsServiceControl/Interval_30min/ --enable-offline-auto-reload --enable-offline-auto-reload-visible-only --enable-delegated-renderer --num-raster-threads=4 --content-image-texture-target=3553,3553,3553,3553,3553,3553,3553,3553,3553,3553,3553,3553 --video-image-texture-target=3553 --disable-accelerated-video-decode --disable-webrtc-hw-encoding --disable-gpu-compositing --channel=5124.781.1063135501 --v8-natives-passed-by-fd --v8-snapshot-passed-by-fd
+m         4732  0.0  0.3 838628 112652 ?       Sl   16:39   0:04          |   |       \_ /opt/google/chrome/chrome --type=renderer --lang=en-US --force-fieldtrials=*AffiliationBasedMatching/EnabledThroughFieldTrial/AppBannerTriggering/Aggressive/CaptivePortalInterstitial/Enabled/*ChildAccountDetection/Disabled/*ClientSideDetectionModel/Model0/*CrossDevicePromo/1DaySingleProfile/DataReductionProxyUseDataSaverOnVPN/Enabled/*DomRel-Enable/enable/*ExtensionContentVerification/Enforce/*ExtensionDeveloperModeWarning/Default/InstanceID/Enabled/*NewVideoRendererTrial/Enabled/*OmniboxBundledExperimentV1/Stable_EthersuggestPrefix_A2/*PasswordBranding/Disabled/*PasswordGeneration/Disabled/ReportCertificateErrors/ShowAndPossiblySend/SHA1IdentityUIWarning/Enabled/SHA1ToolbarUIJanuary2016/Warning/SHA1ToolbarUIJanuary2017/Error/*SafeBrowsingIncidentReportingService/Default/SafeBrowsingReportPhishingErrorLink/Enabled/SafeBrowsingSocialEngineeringStrings/Enabled/*SlimmingPaint/EnableSlimmingPaint/*UMA-Population-Restrict/normal/*UMA-Uniformity-Trial-100-Percent/group_01/*UMA-Uniformity-Trial-20-Percent/group_01/*UMA-Uniformity-Trial-50-Percent/group_01/*UseDelayAgnosticAEC/DefaultEnabled/*VarationsServiceControl/Interval_30min/ --enable-offline-auto-reload --enable-offline-auto-reload-visible-only --enable-delegated-renderer --num-raster-threads=4 --content-image-texture-target=3553,3553,3553,3553,3553,3553,3553,3553,3553,3553,3553,3553 --video-image-texture-target=3553 --disable-accelerated-video-decode --disable-webrtc-hw-encoding --disable-gpu-compositing --channel=5124.783.1065060277 --v8-natives-passed-by-fd --v8-snapshot-passed-by-fd
+m         8971  0.0  0.2 828788 88348 ?        Sl   19:20   0:00          |   |       \_ /opt/google/chrome/chrome --type=renderer --lang=en-US --force-fieldtrials=*AffiliationBasedMatching/EnabledThroughFieldTrial/AppBannerTriggering/Aggressive/CaptivePortalInterstitial/Enabled/*ChildAccountDetection/Disabled/*ClientSideDetectionModel/Model0/*CrossDevicePromo/1DaySingleProfile/DataReductionProxyUseDataSaverOnVPN/Enabled/*DomRel-Enable/enable/*ExtensionContentVerification/Enforce/*ExtensionDeveloperModeWarning/Default/InstanceID/Enabled/*NewVideoRendererTrial/Enabled/*OmniboxBundledExperimentV1/Stable_EthersuggestPrefix_A2/*PasswordBranding/Disabled/*PasswordGeneration/Disabled/ReportCertificateErrors/ShowAndPossiblySend/SHA1IdentityUIWarning/Enabled/SHA1ToolbarUIJanuary2016/Warning/SHA1ToolbarUIJanuary2017/Error/*SafeBrowsingIncidentReportingService/Default/SafeBrowsingReportPhishingErrorLink/Enabled/SafeBrowsingSocialEngineeringStrings/Enabled/*SlimmingPaint/EnableSlimmingPaint/*UMA-Population-Restrict/normal/*UMA-Uniformity-Trial-100-Percent/group_01/*UMA-Uniformity-Trial-20-Percent/group_01/*UMA-Uniformity-Trial-50-Percent/group_01/*UseDelayAgnosticAEC/DefaultEnabled/*VarationsServiceControl/Interval_30min/ --enable-offline-auto-reload --enable-offline-auto-reload-visible-only --enable-delegated-renderer --num-raster-threads=4 --content-image-texture-target=3553,3553,3553,3553,3553,3553,3553,3553,3553,3553,3553,3553 --video-image-texture-target=3553 --disable-accelerated-video-decode --disable-webrtc-hw-encoding --disable-gpu-compositing --channel=5124.794.1543363557 --v8-natives-passed-by-fd --v8-snapshot-passed-by-fd
+m         9032  3.2  1.3 1636760 420740 ?      Sl   19:21   1:03          |   |       \_ /opt/google/chrome/chrome --type=renderer --lang=en-US --force-fieldtrials=*AffiliationBasedMatching/EnabledThroughFieldTrial/AppBannerTriggering/Aggressive/CaptivePortalInterstitial/Enabled/*ChildAccountDetection/Disabled/*ClientSideDetectionModel/Model0/*CrossDevicePromo/1DaySingleProfile/DataReductionProxyUseDataSaverOnVPN/Enabled/*DomRel-Enable/enable/*ExtensionContentVerification/Enforce/*ExtensionDeveloperModeWarning/Default/InstanceID/Enabled/*NewVideoRendererTrial/Enabled/*OmniboxBundledExperimentV1/Stable_EthersuggestPrefix_A2/*PasswordBranding/Disabled/*PasswordGeneration/Disabled/ReportCertificateErrors/ShowAndPossiblySend/SHA1IdentityUIWarning/Enabled/SHA1ToolbarUIJanuary2016/Warning/SHA1ToolbarUIJanuary2017/Error/*SafeBrowsingIncidentReportingService/Default/SafeBrowsingReportPhishingErrorLink/Enabled/SafeBrowsingSocialEngineeringStrings/Enabled/*SlimmingPaint/EnableSlimmingPaint/*UMA-Population-Restrict/normal/*UMA-Uniformity-Trial-100-Percent/group_01/*UMA-Uniformity-Trial-20-Percent/group_01/*UMA-Uniformity-Trial-50-Percent/group_01/*UseDelayAgnosticAEC/DefaultEnabled/*VarationsServiceControl/Interval_30min/ --enable-offline-auto-reload --enable-offline-auto-reload-visible-only --enable-delegated-renderer --num-raster-threads=4 --content-image-texture-target=3553,3553,3553,3553,3553,3553,3553,3553,3553,3553,3553,3553 --video-image-texture-target=3553 --disable-accelerated-video-decode --disable-webrtc-hw-encoding --disable-gpu-compositing --channel=5124.796.229564904 --v8-natives-passed-by-fd --v8-snapshot-passed-by-fd
+m         5351  0.0  0.1 375584 37648 ?        Sl   Feb06   0:04          |   \_ /opt/google/chrome/chrome --type=gpu-process --channel=5124.8.737731266 --supports-dual-gpus=false --gpu-driver-bug-workarounds=2,27,30,45,55,57 --disable-accelerated-video-decode --disable-webrtc-hw-encoding --gpu-vendor-id=0x10de --gpu-device-id=0x100c --gpu-driver-vendor=NVIDIA --gpu-driver-version=352.63 --v8-natives-passed-by-fd --v8-snapshot-passed-by-fd
+m         5353  0.0  0.0 360720  5732 ?        S    Feb06   0:00          |       \_ /opt/google/chrome/chrome --type=gpu-broker                                                                                                                                                                                                                                                                                                                    
+m        22605  1.6  0.4 1290416 128600 ?      Sl   Feb06  50:31          \_ spotify
+m        22622  0.0  0.0 532168  8092 ?        S    Feb06   0:01          |   \_ spotify
+m        22623  0.0  0.0 336376 12688 ?        S    Feb06   0:00          |   \_ /opt/spotify/spotify-client/Data/SpotifyHelper --type=zygote --no-sandbox --lang=en-US --locales-dir-path=/opt/spotify/spotify-client/Data/locales --log-severity=disable --resources-dir-path=/opt/spotify/spotify-client/Data
+m        22669  0.0  0.0 948556 29204 ?        Sl   Feb06   0:04          |       \_ /opt/spotify/spotify-client/Data/SpotifyHelper --type=renderer --js-flags=--harmony-proxies --no-sandbox --lang=en-US --lang=en-US --locales-dir-path=/opt/spotify/spotify-client/Data/locales --log-severity=disable --resources-dir-path=/opt/spotify/spotify-client/Data --product-version=Spotify/0.9.17.1.g9b85d436 --disable-webgl --disable-pepper-3d --disable-gl-multisampling --disable-accelerated-compositing --disable-accelerated-2d-canvas --disable-accelerated-video-decode --channel=22605.2.806872959
+m        22672  0.0  0.0 933108 20316 ?        Sl   Feb06   0:12          |       \_ /opt/spotify/spotify-client/Data/SpotifyHelper --type=renderer --js-flags=--harmony-proxies --no-sandbox --lang=en-US --lang=en-US --locales-dir-path=/opt/spotify/spotify-client/Data/locales --log-severity=disable --resources-dir-path=/opt/spotify/spotify-client/Data --product-version=Spotify/0.9.17.1.g9b85d436 --disable-webgl --disable-pepper-3d --disable-gl-multisampling --disable-accelerated-compositing --disable-accelerated-2d-canvas --disable-accelerated-video-decode --channel=22605.3.1928870253
+m        22691  0.0  0.0 935820 26556 ?        Sl   Feb06   0:08          |       \_ /opt/spotify/spotify-client/Data/SpotifyHelper --type=renderer --js-flags=--harmony-proxies --no-sandbox --lang=en-US --lang=en-US --locales-dir-path=/opt/spotify/spotify-client/Data/locales --log-severity=disable --resources-dir-path=/opt/spotify/spotify-client/Data --product-version=Spotify/0.9.17.1.g9b85d436 --disable-webgl --disable-pepper-3d --disable-gl-multisampling --disable-accelerated-compositing --disable-accelerated-2d-canvas --disable-accelerated-video-decode --channel=22605.4.1395023332
+m        22752  0.0  0.1 961456 50768 ?        Sl   Feb06   0:07          |       \_ /opt/spotify/spotify-client/Data/SpotifyHelper --type=renderer --js-flags=--harmony-proxies --no-sandbox --lang=en-US --lang=en-US --locales-dir-path=/opt/spotify/spotify-client/Data/locales --log-severity=disable --resources-dir-path=/opt/spotify/spotify-client/Data --product-version=Spotify/0.9.17.1.g9b85d436 --disable-webgl --disable-pepper-3d --disable-gl-multisampling --disable-accelerated-compositing --disable-accelerated-2d-canvas --disable-accelerated-video-decode --channel=22605.6.268054052
+m        11821  0.0  0.1 958684 50584 ?        Sl   Feb06   0:05          |       \_ /opt/spotify/spotify-client/Data/SpotifyHelper --type=renderer --js-flags=--harmony-proxies --no-sandbox --lang=en-US --lang=en-US --locales-dir-path=/opt/spotify/spotify-client/Data/locales --log-severity=disable --resources-dir-path=/opt/spotify/spotify-client/Data --product-version=Spotify/0.9.17.1.g9b85d436 --disable-webgl --disable-pepper-3d --disable-gl-multisampling --disable-accelerated-compositing --disable-accelerated-2d-canvas --disable-accelerated-video-decode --channel=22605.14.1169307713
+m         9454  2.4  0.1 670824 49396 ?        Sl   Feb07  45:58          \_ skype
+m        14779  0.0  0.0  28836  7372 ?        S    00:42   0:00          \_ /usr/bin/python /home/m/.local/share/mendeleydesktop
+m        14782  0.0  0.0      0     0 ?        Z    00:42   0:00          |   \_ [install-mendele] <defunct>
+m        14783  0.3  0.5 3504880 177992 ?      Sl   00:42   3:45          |   \_ /home/m/Downloads/mendeleydesktop-1.15.2-linux-x86_64/bin/..//lib/mendeleydesktop/libexec/mendeleydesktop.x86_64
+m        28687  0.0  0.0   4448   680 ?        Ss   11:52   0:00          \_ /bin/sh -e /proc/self/fd/9
+m        28689  0.0  0.2 501696 92124 ?        Sl   11:52   0:06          |   \_ /usr/bin/python3 /usr/share/apport/apport-gtk
+m         7323  0.0  0.0 379948  7540 ?        Sl   18:19   0:00          \_ /usr/lib/gvfs/gvfsd-archive file=/media/m/DT-HDD-3/git/deep-simplification/simplify/model_hal.iter55400.npz
+m         7334  0.0  0.0 288044  8892 ?        Sl   18:19   0:00          \_ /usr/lib/gvfs/gvfsd-network --spawner :1.9 /org/gtk/gvfs/exec_spaw/3
+m         7347  0.0  0.0 281456  6252 ?        Sl   18:19   0:00          \_ /usr/lib/gvfs/gvfsd-dnssd --spawner :1.9 /org/gtk/gvfs/exec_spaw/5
+m         9212  0.0  0.0 491824 24252 ?        Ssl  19:21   0:00          \_ /usr/lib/unity/unity-panel-service --lockscreen-mode
+root      1612  0.0  0.0 288888  7596 ?        Sl   Feb06   0:05 /usr/lib/accountsservice/accounts-daemon
+nvidia-+  1626  0.0  0.0   8836  1276 ?        Ss   Feb06   0:00 /usr/bin/nvidia-persistenced --user nvidia-persistenced
+root      1736  0.0  0.0 152524 13132 ?        S    Feb06   0:46 /usr/bin/python -O /usr/share/wicd/daemon/wicd-daemon.py
+root      1785  0.0  0.0  76980 14544 ?        S    Feb06   0:19  \_ /usr/bin/python -O /usr/share/wicd/daemon/monitor.py
+root      1845  0.0  0.0  63528  4620 ?        Ss   Feb06   0:02 /usr/sbin/apache2 -k start
+www-data 23668  0.0  0.0 352692  3988 ?        Sl   07:45   0:05  \_ /usr/sbin/apache2 -k start
+www-data 23669  0.0  0.0 352748  4528 ?        Sl   07:45   0:05  \_ /usr/sbin/apache2 -k start
+root      1984  0.0  0.0 304884  7284 ?        Sl   Feb06   0:00 /usr/lib/upower/upowerd
+rtkit     2029  0.0  0.0 160700  2204 ?        SNl  Feb06   0:01 /usr/lib/rtkit/rtkit-daemon
+root      2260 60.6  1.4 5658708 446548 ?      SNl  Feb06 1932:55 /usr/bin/java -Dfile.encoding=UTF-8 -Dapp=CrashPlanService -DappBaseName=CrashPlan -Xms20m -Xmx1024m -Dsun.net.inetaddr.ttl=300 -Dnetworkaddress.cache.ttl=300 -Dsun.net.inetaddr.negative.ttl=0 -Dnetworkaddress.cache.negative.ttl=0 -Dc42.native.md5.enabled=false -classpath /usr/local/crashplan/lib/com.backup42.desktop.jar:/usr/local/crashplan/lang com.backup42.service.CPService
+root      2283  0.0  0.0  11800  1564 tty1     Ss+  Feb06   0:00 /sbin/getty -8 38400 tty1
+colord    2479  0.0  0.0 293384  8044 ?        Sl   Feb06   0:00 /usr/lib/colord/colord
+root      2558  0.0  0.0 1048944 3056 ?        Ssl  Feb06   0:02 /usr/sbin/nscd
+root      2712  0.0  0.1 905440 48140 ?        Ssl  Feb06   2:59 /usr/bin/docker daemon
+root     14078  0.0  0.0 437528 29120 ?        Sl   Feb06   0:22  \_ docker-proxy -proto tcp -host-ip 0.0.0.0 -host-port 3000 -container-ip 172.17.0.2 -container-port 3000
+root     14089  0.0  0.0  18212  3300 pts/18   Ss   Feb06   0:00  \_ /bin/bash
+root     14118  0.0  0.5 3837112 166992 pts/18 Sl   Feb06   0:54      \_ java -mx1000m -cp stanford-ner.jar edu.stanford.nlp.ie.NERServer -loadClassifier classifiers/english.muc.7class.distsim.crf.ser.gz -port 8080 -outputFormat inlineXML
+root     11074  0.0  0.0  54420 18088 pts/18   S+   Feb07   0:00      \_ python restful-ner.py
+root     11077  0.1  0.0 136972 19224 pts/18   Sl+  Feb07   3:27          \_ /usr/bin/python restful-ner.py
+m         2825  0.0  0.1 635972 44196 ?        SLl  Feb06   1:11 /usr/bin/gnome-keyring-daemon --daemonize --login
+root      3308  0.0  0.0 781640 12756 ?        Sl   Feb06   0:16 /usr/lib/udisks2/udisksd --no-debug
+root      3391  0.0  0.0  13980  2500 ?        Ss   Feb06   0:00 /sbin/mount.ntfs /dev/sdc1 /media/m/Seagate Backup Plus Drive -o rw,nosuid,nodev,uhelper=udisks2,uid=1000,gid=1000,dmask=0077,fmask=0177
+root      3462  0.0  0.0  14200  2804 ?        Ss   Feb06   0:00 /sbin/mount.ntfs /dev/sdd2 /media/m/HD1 -o rw,nosuid,nodev,uhelper=udisks2,uid=1000,gid=1000,dmask=0077,fmask=0177
+root     23798  0.0  0.0  77420  6652 ?        Ss   07:45   0:00 /usr/sbin/cupsd -f
+lp       23801  0.0  0.0  63380  3928 ?        S    07:45   0:00  \_ /usr/lib/cups/notifier/dbus dbus:// 
