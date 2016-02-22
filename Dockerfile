@@ -19,5 +19,5 @@ WORKDIR /home
 RUN git clone http://github.com/mbartoli/deep-simplification
 
 WORKDIR /home/deep-simplification/simplify
-#RUN wget http:/X/mvb02012.pomona.edu/model_hal.iter72000.npz
+#RUN wget http:/X/model_hal.iter72000.npz
 #RUN wget http://X/model_hal.iter72000.npz.pkl
