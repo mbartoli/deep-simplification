@@ -30,8 +30,8 @@ def main(job_id, params):
                                '../data/training/training.simple.aligned.tok'],
                      valid_datasets=['../data/validation/validation.normal.aligned.tok',
                                      '../data/validation/validation.simple.aligned.tok'],
-                     dictionaries=['../data/dictionaries/simple.wiki.tok.pkl',
-                                   '../data/dictionaries/simple.wiki.tok.pkl'],
+                     dictionaries=['../data/dictionaries/training.normal.aligned.null.tok.pkl',
+                                   '../data/dictionaries/training.simple.aligned.null.tok.pkl'],
                      use_dropout=params['use-dropout'][0],
                      overwrite=False)
     return validerr
