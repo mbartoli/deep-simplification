@@ -1,5 +1,5 @@
 # deep-simplification
-Text simplification using RNNs. Our deep-simplification model achieves a BLEU score of 60.53
+Text simplification using RNNs. Our deep-simplification model achieves a BLEU score of 61.14
 
 ## Training
 Navigate to the simplify directory and run
